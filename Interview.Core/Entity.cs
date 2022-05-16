@@ -9,5 +9,7 @@ namespace Interview.Core
     public abstract class Entity
     {
         public IComparable Id { get; set; }
+
+        
     }
 }
