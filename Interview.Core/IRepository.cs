@@ -12,6 +12,6 @@ namespace Interview.Core
         void Add(T item);
 
         IEnumerable<T> FindAll(Func<T, bool> where);
-
+        
     }
 }

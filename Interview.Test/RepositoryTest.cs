@@ -13,19 +13,20 @@ namespace Interview.Test
     
     public class RepositoryTest
     {
-        //[TestMethod]
-        //public void TestSetup()
-        //{
-        //    var _person = new Person();
-        //    _person.Name = "New";
-        //    _person.Id = 22;
-        //    _person.Age = 26;
-        //    var _repository = new Repository<Person>();
-        //    _repository.Add(_person);
-        //}
+        [Test]
+        public void GetAllTest()
+        {
+            var persons = new List<Person>
+            { 
+              new Person{Name="Mayank",Id=1,Age=26},
+              new Person{Name="Ptern",Id=2,Age=23},
+              new Person{Name="3rd", Id=3, Age=19}
+            };
+            var repo = new Mock<IRepository<Person>>();
+        }
 
-      
-        private readonly Person _person = new Person();
+
+        //private readonly Person _person = new Person();
 
         [Test]
 		public void AddTest_WhenSuccessful()

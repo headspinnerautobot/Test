@@ -14,8 +14,7 @@ namespace Interview.Core
         private readonly IList<T> _entityList;
         public Repository(IList<T> entityList)
         {
-            _entityList = entityList;
-            
+            _entityList = entityList;     
         }
 
         public void Add(T item)
